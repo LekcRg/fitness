@@ -24,7 +24,7 @@ header{
   color: #fff;
   text-decoration: none;
   margin-bottom: 2px;
-  display: block;
+  display: inline-block;
 }
 .header__phone:hover{
   text-decoration: underline;
@@ -37,6 +37,11 @@ header{
   text-decoration: underline;
   cursor: pointer;
 }
+.header__time-wrapper{
+  height: 19px;
+  position: absolute;
+  z-index: 2;
+}
 .header__time:hover{
   color: rgba(255, 255, 255, .7);
   transition: all 0.2s ease-out;
@@ -44,8 +49,11 @@ header{
 .header__time-wrapper:hover .header__time-block{
   opacity: 1;
   transition: all 0.2s ease-out;
+  visibility: visible;
 }
 .header__time-block{
+  visibility: hidden;
+  position: relative;
   opacity: 0;
   font-size: 14px;
   text-align-last: left;
@@ -58,25 +66,28 @@ header{
   background: #fff;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
-.header__time-block:hover{
-  opacity: 1;
+.header__time-block:after{
+  content: '';
+  width: 115px;
+  height: 12px;
+  right: 0;
+  top: -12px;
+  position: absolute;
 }
 .header__time-block::before{
   content: '';
   position: absolute;
-  right: 0;
-  top: 50px;
+  right: 2px;
+  top: -21px;
   border: 10px solid transparent;
   border-bottom: 12px solid #fff;
 }
 .header__work{
-  position: relative;
   margin-bottom: 5px;
   color: #f89513;
   font-weight: bold;
 }
 .header__do-not-work{
-  position: relative;
   color: #221f1f;
   font-weight: lighter;
 }

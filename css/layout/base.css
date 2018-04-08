@@ -31,6 +31,13 @@ li{
 address{
   font-style: normal;
 }
+.visually-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 .inner-page{
   padding-top: 41px;
   width: 880px;

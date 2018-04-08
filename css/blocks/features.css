@@ -32,11 +32,15 @@
 }
 .features__item{
   margin: 0 auto;
-  list-style-type: disc;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   line-height: 34px;
   list-style-position: inside;
+}
+.features__item:before{
+  content: '•';
+  margin-left: 5px;
+  margin-right: 20px;
 }
 .features__icon-wrapper{
   position: relative;
