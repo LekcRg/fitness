@@ -31,6 +31,9 @@ li{
 address{
   font-style: normal;
 }
+.transition{
+  transition: .2s ease;
+}
 .visually-hidden{
   position: absolute;
   clip: rect(0 0 0 0);

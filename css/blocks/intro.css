@@ -1,11 +1,21 @@
-@keyframes resize{
+@keyframes bounce{
   0%{
-    width: 0;
-    opacity: 0;
+    transform: scale3d(0,0,0);
+  }
+  20%{
+    transform: scale3d(1.1,1.1,1.1);
+  }
+  40%{
+    transform: scale3d(.9,.9,.9);
+  }
+  60%{
+    transform: scale3d(1.05,1.05,1.5);
+  }
+  80%{
+    transform: scale3d(.95,.95,.95);
   }
   100%{
-    width: 172px;
-    opacity: 1;
+    transform: scale3d(1,1,1);
   }
 }
 .intro-bg{
@@ -30,7 +40,7 @@
 }
 .intro__link{
   padding-top: 16px;
-  background-color: #f89513;
+  background-color: #131415;
   height: 45px;
   border-radius: 5px;
   color: #fff;
@@ -41,11 +51,11 @@
   margin-top: 29px;
 }
 .intro__link:hover{
-  background-color: #131415;
-  transition: all .3s ease-out;
+  background-color: #f89513;
 }
 .big-logo, .intro__link{
   display: block;
+  animation: bounce 1s ease both ;
 }
 .test-block{
   width: 500px;
