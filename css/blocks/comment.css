@@ -97,6 +97,10 @@ button{
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  transition: background .2s ease;
+}
+button:hover{
+  background-color: #f89513;
 }
 button:focus{
   outline: none;

@@ -25,11 +25,10 @@
   font-family: 'Open Sans';
   font-size: 12px;
   font-weight: bold;
-  transition: all 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 .navigation__item:hover .navigation__link{
   color: #f89513;
-  transition: all 0.2s ease-out;
 }
 .navigation__item--active .navigation__link{
   color: #f89513;

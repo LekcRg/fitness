@@ -49,6 +49,7 @@
   font-size: 12px;
   text-align: center;
   margin-top: 29px;
+  transition: background-color .2s ease;
 }
 .intro__link:hover{
   background-color: #f89513;

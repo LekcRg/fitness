@@ -44,11 +44,9 @@ header{
 }
 .header__time:hover{
   color: rgba(255, 255, 255, .7);
-  transition: all 0.2s ease-out;
 }
 .header__time-wrapper:hover .header__time-block{
   opacity: 1;
-  transition: all 0.2s ease-out;
   visibility: visible;
 }
 .header__time-block{
@@ -65,6 +63,7 @@ header{
   font-family: 'Open Sans';
   background: #fff;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-out;
 }
 .header__time-block:after{
   content: '';
